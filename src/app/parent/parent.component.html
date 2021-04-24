@@ -1,3 +1,6 @@
 <h1>Parent</h1>
 {{parentMsg}}
-<child [messageToChild] = "parentMsgToChild"></child>
+<div *ngIf="messageFromChild">
+    Message from child: {{messageFromChild}}
+</div>
+<child [messageFromParent] = "parentMsgToChild" (messageToParent)="textFromChild($event)"></child>
