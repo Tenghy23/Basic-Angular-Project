@@ -1,4 +1,4 @@
-# Basic-Angular-Startup-Project
+# Basic-Angular-Project
 
 Hello welcome, 
 
