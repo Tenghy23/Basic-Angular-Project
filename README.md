@@ -19,6 +19,8 @@ This project will help you to achieve basic understanding of Angular.
 - Nested Form Group
 - FormBuilder
 
+6. Dependency Injection
+
 
 ## Running the Application
 
