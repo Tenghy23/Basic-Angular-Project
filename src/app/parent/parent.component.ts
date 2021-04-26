@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'parent',
@@ -9,7 +9,7 @@ export class ParentComponent implements OnInit {
 
   private parentMsg: string;
   private parentMsgToChild: string;
-  messageFromChild: string;
+  private messageFromChild: string;
 
   constructor() { }
 

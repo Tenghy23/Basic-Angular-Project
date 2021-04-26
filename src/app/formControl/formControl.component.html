@@ -1,0 +1,13 @@
+<div fxLayout="column" fxLayoutAlign="space-around center" fxLayoutGap="30px">
+    <h2>FormControl</h2>
+    <label>
+        Enter your name: 
+        <input [formControl]="name">
+    </label>
+    <div *ngIf="displayFormControl">
+        Value from FormControl: <b>{{ displayFormControl }}</b>
+    </div>
+    <div>
+        <button (click)="updateName()">Update formcontrol</button>
+    </div>
+</div>
