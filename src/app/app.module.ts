@@ -12,6 +12,7 @@ import { FormControlComponent } from './formControl/formControl.component';
 import { FormGroupComponent } from './formGroup/formGroup.component';
 import { FormNestGroupComponent } from './formNestedGroup/formNestGroup.component';
 import { FormBuilderComponent } from './formBuilder/formBuilder.component';
+import { DependencyInjectionComponent } from './dependencyInjection/dependencyInjection.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { FormBuilderComponent } from './formBuilder/formBuilder.component';
     FormGroupComponent,
     FormNestGroupComponent,
     FormBuilderComponent,
+    DependencyInjectionComponent,
   ],
   imports: [
     BrowserModule,
