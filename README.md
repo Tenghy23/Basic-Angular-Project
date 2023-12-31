@@ -26,7 +26,7 @@ This project will help you to achieve basic understanding of Angular.
 
 1. Install the Angular CLI
 
-    `npm install -g @angular/cli`
+    `npm install -g @angular/cli@7.3.1`
 
 1. Run `npm install`
 

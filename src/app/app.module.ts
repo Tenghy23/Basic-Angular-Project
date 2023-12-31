@@ -13,11 +13,13 @@ import { FormGroupComponent } from './formGroup/formGroup.component';
 import { FormNestGroupComponent } from './formNestedGroup/formNestGroup.component';
 import { FormBuilderComponent } from './formBuilder/formBuilder.component';
 import { DependencyInjectionComponent } from './dependencyInjection/dependencyInjection.component';
+import { Parent2Component } from './parent2/parent2.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ParentComponent,
+    Parent2Component,
     ChildComponent,
     HomepageComponent,
     LoginpageComponent,
