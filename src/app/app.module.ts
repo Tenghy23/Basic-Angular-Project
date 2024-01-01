@@ -19,9 +19,7 @@ import { Child2Component } from './child2/child2.component';
 @NgModule({
   declarations: [
     AppComponent,
-    ParentComponent,
     Parent2Component,
-    ChildComponent,
     Child2Component,
     HomepageComponent,
     LoginpageComponent,
