@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'parent2',
@@ -8,12 +8,18 @@ import { Component, Input, OnInit } from '@angular/core';
 
 export class Parent2Component implements OnInit {
 
-  @Input() parentMessage: string;
+  private parentMessage: string;
+  public parentMessageToChild: string;
 
   constructor() { }
 
   ngOnInit() {
-    this.parentMessage = "Hello I am the parent";
+    this.parentMessage = "Hello, I am the parent";
+    this.parentMessageToChild = "Parent sends this message to child";
   }
 
+  // create private method to retrieve private parent message
+  getParentMessage() : string {
+    return this.parentMessage;
+  }
 }

@@ -14,6 +14,7 @@ import { FormNestGroupComponent } from './formNestedGroup/formNestGroup.componen
 import { FormBuilderComponent } from './formBuilder/formBuilder.component';
 import { DependencyInjectionComponent } from './dependencyInjection/dependencyInjection.component';
 import { Parent2Component } from './parent2/parent2.component';
+import { Child2Component } from './child2/child2.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { Parent2Component } from './parent2/parent2.component';
     ParentComponent,
     Parent2Component,
     ChildComponent,
+    Child2Component,
     HomepageComponent,
     LoginpageComponent,
     FormComponent,
@@ -29,6 +31,7 @@ import { Parent2Component } from './parent2/parent2.component';
     FormNestGroupComponent,
     FormBuilderComponent,
     DependencyInjectionComponent,
+    Child2Component,
   ],
   imports: [
     BrowserModule,

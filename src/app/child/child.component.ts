@@ -20,5 +20,4 @@ export class ChildComponent implements OnInit {
   sendMessageToParent(value: string): void{
     this.messageToParent.emit(value);
   }
-
 }
