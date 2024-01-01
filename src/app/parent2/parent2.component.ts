@@ -10,12 +10,13 @@ export class Parent2Component implements OnInit {
 
   private parentMessage: string;
   public parentMessageToChild: string;
+  receivedMessageFromChild: string; // same, this is declared as public
 
   constructor() { }
 
   ngOnInit() {
     this.parentMessage = "Hello, I am the parent";
-    this.parentMessageToChild = "Parent sends this message to child";
+    this.parentMessageToChild = "Parent sends static message to child";
   }
 
   // create private method to retrieve private parent message

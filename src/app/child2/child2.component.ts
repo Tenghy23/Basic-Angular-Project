@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, Output, EventEmitter, OnInit} from '@angular/core';
 
 @Component({
   selector: 'child2',
@@ -8,7 +8,8 @@ import { Component, Input, OnInit } from '@angular/core';
 export class Child2Component implements OnInit {
 
   private childMessage: string;
-  @Input() messageFromParent: string;
+  @Input() parentMessageToChild: string;
+  @Output() childMessageToParent = new EventEmitter<string>();
 
   constructor() { }
 
@@ -19,5 +20,10 @@ export class Child2Component implements OnInit {
   // create private method to retrieve private child message
   getChildMessage() : string {
     return this.childMessage;
+  }
+
+  // send message from child to parent via private method
+  sendChildMessageToParent(value: string): void {
+    this.childMessageToParent.emit(value);
   }
 }
