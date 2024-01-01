@@ -8,7 +8,11 @@ import { Component, Input, Output, EventEmitter, OnInit} from '@angular/core';
 export class Child2Component implements OnInit {
 
   private childMessage: string;
-  @Input() parentMessageToChild: string;
+  
+  // P3 - init variables in child to receive from parent, then use in html
+  @Input() parentMessageToChild: string; 
+
+  // C1 - init eventEmitter for data to be sent
   @Output() childMessageToParent = new EventEmitter<string>();
 
   constructor() { }
@@ -22,6 +26,7 @@ export class Child2Component implements OnInit {
     return this.childMessage;
   }
 
+  // C2 - create method to send data to parent, insert into html
   // send message from child to parent via private method
   sendChildMessageToParent(value: string): void {
     this.childMessageToParent.emit(value);
