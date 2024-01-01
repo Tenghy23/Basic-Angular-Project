@@ -10,7 +10,7 @@ export class Parent2Component implements OnInit {
 
   private parentMessage: string;
   public parentMessageToChild: string;
-  receivedMessageFromChild: string; // same, this is declared as public
+  childMessageToParent: string; // same, this is declared as public
 
   constructor() { }
 
@@ -22,5 +22,10 @@ export class Parent2Component implements OnInit {
   // create private method to retrieve private parent message
   getParentMessage() : string {
     return this.parentMessage;
+  }
+
+  // create private method to access message from child
+  messageFromChild(text: string){
+    this.childMessageToParent = text;
   }
 }
