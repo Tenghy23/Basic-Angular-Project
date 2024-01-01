@@ -8,7 +8,7 @@ import { Component, Input, OnInit } from '@angular/core';
 export class Child2Component implements OnInit {
 
   private childMessage: string;
-  @Input() parentMessageToChild: string;
+  @Input() messageFromParent: string;
 
   constructor() { }
 
